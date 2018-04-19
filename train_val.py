@@ -23,6 +23,11 @@ class SolverWrapper(object):
         self.state = {}
 
     def snapshot(self, iter):
+        """
+
+        :param iter:
+        :return:
+        """
         net = self.net
         if not os.path.exists(self.output_dir):
             os.makedirs(self.output_dir)
